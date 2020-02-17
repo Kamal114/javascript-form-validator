@@ -75,14 +75,14 @@ body {
     border-color: var(--success--color--);
 }
 
-.form-control.error small {
-    color: var(--error--color--);
-    visibility: visible;
-}
-
 .form-control small {
+    color: var(--error--color--);
     visibility: hidden;
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+.form-control.error small {
+    visibility: visible;
 }

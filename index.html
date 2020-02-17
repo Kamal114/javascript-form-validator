@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>JavaScript Form Validation</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h2>Register With Us</h2>
-        <div id="form" class="form">
-            <div class="form-control">
-                <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter Username">
-                <small>Error Message</small>
-            </div>
-            <div class="form-control">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter Email">
-                <small>Error Message</small>
-            </div>
-            <div class="form-control">
-                <label for="password">Password</label>
-                <input type="text" id="password" placeholder="Enter Password">
-                <small>Error Message</small>
-            </div>
-            <div class="form-control">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="text" id="confirm-password" placeholder="Confirm Password Again">
-                <small>Error Message</small>
-            </div>
-            <button type="submit" class="btn">Submit</button>
+      <h2>Register With Us</h2>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" />
+          <small>Error Message</small>
         </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="text" id="password" placeholder="Enter Password" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="text"
+            id="confirm-password"
+            placeholder="Confirm Password Again"
+          />
+          <small>Error Message</small>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
     </div>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
