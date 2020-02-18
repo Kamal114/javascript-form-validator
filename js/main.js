@@ -16,29 +16,21 @@ function showsuccess(input) {
   form_control.classList = "form-control success";
 }
 
+function checkRequired(inputArr) {
+  inputArr.forEach(function(input) {
+    if (input.value.trim() === "") {
+      showerror(input, `${getFiledName(input)} is required`);
+    } else {
+      showsuccess(input);
+    }
+  });
+}
+
+function getFiledName(input) {
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+
 form.addEventListener("submit", function(e) {
   e.preventDefault();
-  if (username.value === "") {
-    showerror(username, "Username is required");
-  } else {
-    showsuccess(username);
-  }
-
-  if (email.value === "") {
-    showerror(email, "Email is required");
-  } else {
-    showsuccess(email);
-  }
-
-  if (password.value === "") {
-    showerror(password, "Password is required");
-  } else {
-    showsuccess(password);
-  }
-
-  if (password2.value === "") {
-    showerror(password2, "Password2 is required");
-  } else {
-    showsuccess(password2);
-  }
+  checkRequired([username, email, password, password2]);
 });
